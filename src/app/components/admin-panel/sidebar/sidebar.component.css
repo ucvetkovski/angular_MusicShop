@@ -1,0 +1,20 @@
+#sidebar{
+    background-color: skyblue;
+    height: 100%;
+    font-size: large;
+    a{
+        text-decoration: none;
+    }
+    border: 2px solid white;
+}
+
+ul {
+    text-decoration: none;
+    li{
+        list-style: none;
+        margin: 5px 0px;
+    }
+    h6{
+        margin-top: 15px;
+    }
+}

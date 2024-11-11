@@ -1,0 +1,39 @@
+<div id="admin_albums">
+    <div class="container">
+        <div>
+            <table border="2px solid black" id="table">
+                <thead>
+                    <tr>
+                        <td style="width: 150px;">Cover</td>
+                        <td>Title</td>
+                        <td>Artist</td>
+                        <td>Format</td>
+                        <td>Price</td>
+                        <td>In stock</td>
+                        <td>Release Year</td>
+                        <td>Edit</td>
+                        <td>Delete</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let album of albums">
+                        <td><img src="{{album.path}}" width="150px"/></td>
+                        <td>{{album.title}}</td>
+                        <td>{{album.artist_name}}</td>
+                        <td>{{album.format_name}}</td>
+                        <td>${{album.value}}</td>
+                        <td>{{album.in_stock}}</td>
+                        <td>{{album.release_year}}</td>
+                        <td><button type="button" class="btn btn-warning" (click)="edit(album[0])">Edit</button></td>
+                        <td><button type="button" class="btn btn-danger" (click)="delete(album[0])">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="margin: 10px;">
+            <button type="button" class="btn btn-info" (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+            <button type="button" class="btn btn-info" (click)="nextPage()"
+                [disabled]="currentPage === totalPages">Next</button>
+        </div>
+    </div>
+</div>

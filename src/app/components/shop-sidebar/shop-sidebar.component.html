@@ -1,0 +1,27 @@
+<div id="sidebar">
+    <div style="margin: 10px;">
+        <input style="width: 60%; margin: 15px;" type="text" [(ngModel)]="keyword" placeholder="Search..">
+        <button type="btn" class="btn btn-info" (click)="filter($event)">Search</button>
+    </div>
+    <div>
+        <h4 style="text-decoration: underline;">Genre:</h4>
+        <ul>
+            <li *ngFor="let genre of genres">
+                <div style="padding: 5px;">
+                    <label for="{{genre.genre_name}}">{{genre.genre_name}}</label>
+                    <input type="checkbox" name="{{genre.genre_name}}" class="genre" [value]="genre.id_genre" (change)="filter($event)">
+            </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h4 style="text-decoration: underline;">Format:</h4>
+        <div fxLayout="row wrap" fxLayoutAlign="space-around center">
+            <div *ngFor="let format of formats" style="padding: 2.25px;">
+                <label for="{{format.format_name}}">{{format.format_name}}</label>
+                <input type="checkbox" name="{{format.format_name}}" class="format" [value]="format.id_format" (change)="filter($event)">
+            </div>
+        </div>
+    </div>
+
+</div>

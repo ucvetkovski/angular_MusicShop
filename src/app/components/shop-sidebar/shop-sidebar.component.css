@@ -1,0 +1,31 @@
+*{
+    border-radius: 0px;
+}
+#sidebar{
+    background-color: rgb(99, 197, 235); 
+    padding: 15px; 
+    height: 100%;
+    mask-image: linear-gradient(to top, white 98.25%, white 99%, transparent);
+    border-right: 5px solid white;
+}
+
+ol,ul {
+    -webkit-column-count: 3;
+    -webkit-column-gap: 5px;
+    -moz-column-count: 3;
+    -moz-column-gap: 5px;
+    -o-column-count: 3;
+    -o-column-gap: 5px;
+    column-count: 2;
+    column-gap: 10px;
+    list-style-position: inside;
+}
+
+label{
+    margin-right: 3px;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+}

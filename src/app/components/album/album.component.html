@@ -1,0 +1,19 @@
+<div style= "border: 5px solid white; width: 505px; background-color: orange; color:rgb(20, 20, 19)" class="album" fxLayout="row wrap">
+        <div fxFlex="60%" style=" height: fit-content; padding: 15px; text-align: end;" >
+            <h4><strong>{{album.title}}</strong></h4>
+            <p style="margin-top: 5.75px;">{{album.artist_name}}</p>
+            <div style="margin-top: 9.75px">
+                <p><strong>{{album.format_name}} &#8226; ${{album.value}}</strong></p>
+                <button type="button" (click)="viewDetails(album)" class="btn btn-info">Details</button>
+                <ng-container *ngIf="album.in_stock > 0; else elseTemplate">
+                    <button type="button" (click)="addToCart(album)" class="btn btn-dark">Add to cart</button>
+                </ng-container>
+                <ng-template #elseTemplate>
+                    <span class="btn btn-danger">Out of stock.</span>
+                </ng-template>
+            </div>
+        </div>
+    <div fxFlex="40%" style="width: 100%;">
+        <img src="{{album.path}}" (click)="viewDetails(album)" style="width: inherit;" />
+    </div>
+</div>

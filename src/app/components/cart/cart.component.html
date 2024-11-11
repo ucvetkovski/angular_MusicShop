@@ -1,0 +1,113 @@
+<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" style="background-color: skyblue;">
+    <script src="https://kit.fontawesome.com/81d2b053cd.js" crossorigin="anonymous"></script>
+    <ng-container *ngIf="cartItems.length; else elseTemplate">
+        <div fxFlex="65%" style="padding: 20px;">
+<table border="5px" style="width: 100%;">
+    <thead>
+        <tr>
+            <td [width]="150">Cover</td>
+            <td>Title</td>
+            <td>Artist</td>
+            <td>Format</td>
+            <td>Unit price</td>
+            <td>In stock</td>
+            <td>Quantity</td>
+            <td>Total</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of cartItems">
+            <td><img style="width: 100%;" src="{{getAlbum(item.id).path}}" /></td>
+            <td>{{getAlbum(item.id).title}}</td>
+            <td>{{getAlbum(item.id).artist_name}}</td>
+            <td>{{getAlbum(item.id).format_name}}</td>
+            <td>${{getAlbum(item.id).value}}</td>
+            <td>{{getAlbum(item.id).in_stock}}</td>
+            <td>
+                <button type="btn" class="btn-warning" style="text-align: center;" (click)="removeItem(item.id)"><span
+                        class="symbol">&minus;</span></button>
+                <span style="font-size: large; margin: 10px;">{{item.count}}</span>
+                <button type="btn" class="btn-info" (click)="addItem(item.id)"><span class="symbol">&plus;</span></button>
+            </td>
+            <td>${{ (getAlbum(item.id).value * item.count).toFixed(2)}}</td>
+        </tr>
+        <tr>
+            <td colspan="9" style="text-align: end; font-size: larger;">Total = ${{getTotal()}}</td>
+        </tr>
+    </tbody>
+</table>
+        </div>
+        <div style="background-color: orange; padding: 30px; height: fit-content;" fxFlex="35%" fxLayout="column" fxLayoutAlign="center center">
+            <h1 style="margin-bottom: 25px;">Checkout</h1>
+            <form [formGroup]="checkout_form" (ngSubmit)="checkout()">
+                <div fxLayout="column">
+                    <label for="firstName">First Name: <span class="error">*</span></label>
+                    <input type="text" class="form-control" name="firstName" formControlName="first_name" placeholder="John"/>
+                    <div *ngIf="checkout_form.get('first_name')?.invalid && checkout_form.get('first_name')?.touched">
+                        <div *ngIf="checkout_form.get('first_name')?.errors?.['required']"><span class="error">First name is required.</span></div>
+                    </div>
+                </div>
+                <div fxLayout="column" style="margin: 15px 0px;">
+                    <label for="lastName">Last Name: <span class="error">*</span></label>
+                    <input type="text" class="form-control" name="lastName" formControlName="last_name" placeholder="Mayer" [disabled]="user"/>
+                    <div *ngIf="checkout_form.get('last_name')?.invalid && checkout_form.get('last_name')?.touched">
+                        <div *ngIf="checkout_form.get('last_name')?.errors?.['required']"><span class="error">Last name is required.</span></div>
+                    </div>
+                </div>
+                <div fxLayout="column">
+                    <label for="email">Email: <span class="error">*</span></label>
+                    <input type="text" class="form-control" name="email" formControlName="email" placeholder="john.mayer@email.com" />
+                    <span style="font-size: small;">A receipt for your purchase will be sent to this email address.</span>
+                    <div *ngIf="checkout_form.get('email')?.invalid && checkout_form.get('email')?.touched">
+                        <div *ngIf="checkout_form.get('email')?.errors?.['required']"><span class="error">Email is required.</span>
+                        </div>
+                        <div *ngIf="checkout_form.get('email')?.errors?.['email']"><span class="error">Invalid email format.</span>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="column" style="margin: 15px 0px;">
+                    <label for="phone">Phone:</label>
+                    <input type="text" class="form-control" name="phone" placeholder="+011 234 567 89" [value]="user ? user.phone : ''"/>
+                </div>
+                <div fxLayout="column">
+                    <label for="address">Address: <span class="error">*</span></label>
+                    <input class="form-control" type="text" formControlName="address" name="address" placeholder="Cornelia Street, New York"/>
+                    <div *ngIf="checkout_form.get('address')?.invalid && checkout_form.get('address')?.touched">
+                        <div *ngIf="checkout_form.get('address')?.errors?.['required']"><span class="error">Address is required.</span>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="column" style="margin: 15px 0px;">
+                    <label for="card">Card Number: <span class="error">*</span></label>
+                    <input type="text" class="form-control" formControlName="card_number" name="card" placeholder="**** **** **** ****" />
+                    <div *ngIf="checkout_form.get('card_number')?.invalid && checkout_form.get('card_number')?.touched">
+                        <div *ngIf="checkout_form.get('card_number')?.errors?.['required']"><span class="error">Please provide your card number.</span>
+                        </div>
+                        <div *ngIf="checkout_form.get('card_number')?.errors?.['pattern']"><span class="error">Invalid card number format. 16 digits expected.</span>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="column">
+                    <label for="cvv">CVV2: <span class="error">*</span></label>
+                    <input type="text" class="form-control" formControlName="cvv" name="cvv" placeholder="***" />
+                    <div *ngIf="checkout_form.get('cvv')?.invalid && checkout_form.get('cvv')?.touched">
+                        <div *ngIf="checkout_form.get('cvv')?.errors?.['required']"><span class="error">Please provide your card's CVV2
+                                number.</span>
+                        </div>
+                        <div *ngIf="checkout_form.get('cvv')?.errors?.['pattern']"><span class="error">A CVV2 contains 3 digits.</span>
+                        </div>
+                    </div>
+                </div>
+                <div fxLayout="column" style="margin: 15px 0px;">
+                    <p>Your total is: ${{getTotal()}}</p>
+                    <button type="submit" [disabled]="checkout_form.invalid" class="btn btn-info">Checkout</button>
+                </div>
+            </form>
+        </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <div id="message">
+            <h1>You don't have any items in your cart.</h1>
+        </div>
+    </ng-template>
+</div>

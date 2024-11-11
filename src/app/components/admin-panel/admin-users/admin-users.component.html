@@ -1,0 +1,36 @@
+<div id="admin_users">
+    <div class="container">
+        <div>
+            <table border="2px solid black" id="table">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Email</td>
+                        <td>Phone</td>
+                        <td>Address</td>
+                        <td>Role</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <td>{{user.id_user}}</td>
+                        <td>{{user.first_name}}</td>
+                        <td>{{user.last_name}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.phone}}</td>
+                        <td>{{user.address}}</td>
+                        <td>{{user.role_name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="margin: 10px;">
+            <button type="button" class="btn btn-info" (click)="prevPage()"
+                [disabled]="currentPage === 1">Previous</button>
+            <button type="button" class="btn btn-info" (click)="nextPage()"
+                [disabled]="currentPage === totalPages">Next</button>
+        </div>
+    </div>
+</div>

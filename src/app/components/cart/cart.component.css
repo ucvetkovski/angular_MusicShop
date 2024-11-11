@@ -1,0 +1,25 @@
+* {
+    font-family: "Oswald", sans-serif !important;
+    font-weight: 350;
+    font-style: normal;
+    border-radius: 0px !important;
+}
+
+td{
+    padding: 10px;
+}
+
+#message{
+    padding: 0px auto;
+    margin: 70px auto;
+}
+
+thead{
+    td{
+        font-weight: bold;
+    }
+}
+
+.symbol{
+    font-weight: bold; font-size: larger; padding: 5px;
+}

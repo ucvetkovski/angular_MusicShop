@@ -1,0 +1,7 @@
+<div *ngIf="message" class="notification">
+    <div>{{ message }}</div>
+    <div *ngIf="item">
+        <strong>Item: </strong>{{ item.title }}
+        <img style="width: 80px; margin: 10px;" src="{{item.coverImg}}"/>
+    </div>
+</div>

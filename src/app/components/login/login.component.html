@@ -1,0 +1,20 @@
+<div style="background-color: skyblue; padding: 30px;">
+    <div class="container" style="background-color: orange; padding: 40px;" fxLayout="column" fxLayoutAlign="space-between center">
+        <form class="form">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control" type="text" name="email" placeholder="placeholder@gmail.com" [(ngModel)]="email"/>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input class="form-control" type="password" name="password" placeholder="*****" [(ngModel)]="password"/>
+            </div>
+            <div class="form-group">
+                <p class="error">{{error}}</p>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-info form-control" (click)="login()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

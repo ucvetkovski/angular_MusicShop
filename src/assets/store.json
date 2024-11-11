@@ -1,0 +1,864 @@
+{
+    
+    "albums" : [
+        {
+            "albumId": "AL1",
+            "title": "Speak Now (Taylor's Version)",
+            "artistId" : 1,
+            "formatId" : 2,
+            "genreId": ["G6","G14"],
+            "inStock": 20,
+            "price" : 59.99,
+            "trackList" : [
+                {
+                    "title" : "Mine (Taylor's Version)",
+                    "duration" : 231
+                },
+                {
+                    "title" : "Sparks Fly (Taylor's Version)",
+                    "duration" : 261
+                },
+                {
+                    "title" : "Back to December (Taylor's Version)",
+                    "duration" : 290
+                },
+                {
+                    "title" : "Speak Now (Taylor's Version)",
+                    "duration" : 242
+                },
+                {
+                    "title" : "Dear John (Taylor's Version)",
+                    "duration" : 405
+                },
+                {
+                    "title" : "Mean (Taylor's Version)",
+                    "duration" : 238
+                },
+                {
+                    "title" : "The Story of Us (Taylor's Version)",
+                    "duration" : 267
+                },
+                {
+                    "title" : "Never Grow Up (Taylor's Version)",
+                    "duration" : 292
+                },
+                {
+                    "title" : "Enchanted (Taylor's Version)",
+                    "duration" : 353
+                },
+                {
+                    "title" : "Better Than Revenge (Taylor's Version)",
+                    "duration" : 220
+                },
+                {
+                    "title" : "Innocent (Taylor's Version)",
+                    "duration" : 301
+                },
+                {
+                    "title" : "Haunted (Taylor's Version)",
+                    "duration" : 245
+                },
+                {
+                    "title" : "Last Kiss (Taylor's Version)",
+                    "duration" : 369
+                },
+                {
+                    "title" : "Long Live (Taylor's Version)",
+                    "duration" : 317
+                },
+                {
+                    "title" : "Ours (Taylor's Version)",
+                    "duration" : 235
+                },
+                {
+                    "title" : "Superman (Taylor's Version)",
+                    "duration" : 274
+                },
+                {
+                    "title" : "Electric Touch (From the Vault)",
+                    "duration" : 266
+                },
+                {
+                    "title" : "When Emma Falls in Love (From the Vault)",
+                    "duration" : 252
+                },
+                {
+                    "title" : "I Can See You (From the Vault)",
+                    "duration" : 273
+                },
+                {
+                    "title" : "Castles Crumbling (From the Vault)",
+                    "duration" : 306
+                },
+                {
+                    "title" : "Foolish One (From the Vault)",
+                    "duration" : 311
+                },
+                {
+                    "title" : "Timeless (From the Vault)",
+                    "duration" : 321
+                }
+            ],
+            "releaseYear" : 2023,
+            "recordLabel" : "Republic Records",
+            "coverImg" : "assets/images/speakNowTV.png"
+        },
+        {
+            "albumId": "AL2",
+            "title": "reputation",
+            "artistId" : 1,
+            "formatId" : 2,
+            "genreId": ["G1","G2","G9"],
+            "inStock": 15,
+            "price" : 49.99,
+            "trackList" : [
+                {
+                    "title" : "...Ready for It?",
+                    "duration" : 208
+                },
+                {
+                    "title" : "End Game (ft. Ed Sheeran and Future)",
+                    "duration" : 244
+                },
+                {
+                    "title" : "I Did Something Bad",
+                    "duration" : 238
+                },
+                {
+                    "title" : "Don't Blame Me",
+                    "duration" : 236
+                },
+                {
+                    "title" : "Delicate",
+                    "duration" : 232
+                },
+                {
+                    "title" : "Look What You Made Me Do",
+                    "duration" : 211
+                },
+                {
+                    "title" : "So It Goes...",
+                    "duration" : 227
+                },
+                {
+                    "title" : "Gorgeous",
+                    "duration" : 209
+                },
+                {
+                    "title" : "Getaway Car",
+                    "duration" : 233
+                },
+                {
+                    "title" : "King Of My Heart",
+                    "duration" : 214
+                },
+                {
+                    "title" : "Dancing With Our Hands Tied",
+                    "duration" : 211
+                },
+                {
+                    "title" : "Dress",
+                    "duration" : 230
+                },
+                {
+                    "title" : "This Is Why We Can't Have Nice Things",
+                    "duration" : 207
+                },
+                {
+                    "title" : "Call It What You Want",
+                    "duration" : 203
+                },
+                {
+                    "title" : "New Year's Day",
+                    "duration" : 235
+                }
+            ],
+            "releaseYear" : 2017,
+            "recordLabel" : "Big Machine",
+            "coverImg" : "assets/images/reputation.png"
+        },
+        {
+            "albumId": "AL3",
+            "title": "Renaissance",
+            "artistId" : 2,
+            "formatId" : 1,
+            "genreId": ["G1","G2","G3"],
+            "inStock": 10,
+            "price" : 19.99,
+            "trackList" : [
+                {
+                    "title" : "I'm That Girl",
+                    "duration" : 208
+                },
+                {
+                    "title" : "Cozy",
+                    "duration" : 210
+                },
+                {
+                    "title" : "Alien Superstar",
+                    "duration" : 215
+                },
+                {
+                    "title" : "Cuff It",
+                    "duration" : 225
+                },
+                {
+                    "title" : "Energy (ft. Beam)",
+                    "duration" : 116
+                },
+                {
+                    "title" : "Break My Soul",
+                    "duration" : 278
+                },
+                {
+                    "title" : "Church Girl",
+                    "duration" : 224
+                },
+                {
+                    "title" : "Plastic Off the Sofa",
+                    "duration" : 254
+                },
+                {
+                    "title" : "Virgo's Groove",
+                    "duration" : 368
+                },
+                {
+                    "title" : "Move (ft. Grace Jones and Tems)",
+                    "duration" : 203
+                },
+                {
+                    "title" : "Heated",
+                    "duration" : 260
+                },
+                {
+                    "title" : "Thique",
+                    "duration" : 244
+                },
+                {
+                    "title" : "All Up in Your Mind",
+                    "duration" : 169
+                },
+                {
+                    "title" : "America Has a Problem",
+                    "duration" : 198
+                },
+                {
+                    "title" : "Pure/Honey",
+                    "duration" : 288
+                },
+                {
+                    "title" : "Summer Renaissance",
+                    "duration" : 274
+                }
+            ],
+            "releaseYear" : 2022,
+            "recordLabel" : "Parkwood Entertainment / Columbia Records",
+            "coverImg" : "assets/images/renaissance.png"
+        },
+        {
+            "albumId": "AL4",
+            "title": "Circus",
+            "artistId" : 3,
+            "formatId" : 1,
+            "genreId": ["G1","G3"],
+            "inStock": 0,
+            "price" : 18.99,
+            "trackList" : [
+                {
+                    "title" : "Womanizer",
+                    "duration" : 223
+                },
+                {
+                    "title" : "Circus",
+                    "duration" : 192
+                },
+                {
+                    "title" : "Out from Under",
+                    "duration" : 234
+                },
+                {
+                    "title" : "Kill the Lights",
+                    "duration" : 239
+                },
+                {
+                    "title" : "Shattered Glass",
+                    "duration" : 173
+                },
+                {
+                    "title" : "If U Seek Amy",
+                    "duration" : 217
+                },
+                {
+                    "title" : "Unusual You",
+                    "duration" : 263
+                },
+                {
+                    "title" : "Blur",
+                    "duration" : 189
+                },
+                {
+                    "title" : "Mmm Papi",
+                    "duration" : 202
+                },
+                {
+                    "title" : "Mannequin",
+                    "duration" : 246
+                },
+                {
+                    "title" : "Lace and Leather",
+                    "duration" : 188
+                },
+                {
+                    "title" : "My Baby",
+                    "duration" : 200
+                },
+                {
+                    "title" : "Radar",
+                    "duration" : 229
+                }
+            ],
+            "releaseYear" : 2008,
+            "recordLabel" : "Jive",
+            "coverImg" : "assets/images/circus.png"
+        },
+        {
+            "albumId": "AL5",
+            "title": "21",
+            "artistId" : 4,
+            "formatId" : 1,
+            "genreId": ["G1","G4"],
+            "inStock": 14,
+            "price" : 17.99,
+            "trackList" : [
+                {
+                    "title" : "Rolling in the Deep",
+                    "duration" : 229
+                },
+                {
+                    "title" : "Rumour Has It",
+                    "duration" : 223
+                },
+                {
+                    "title" : "Turning Tables",
+                    "duration" : 250
+                },
+                {
+                    "title" : "Don't You Remember",
+                    "duration" : 243
+                },
+                {
+                    "title" : "Set Fire to the Rain",
+                    "duration" : 241
+                },
+                {
+                    "title" : "He Won't Go",
+                    "duration" : 277
+                },
+                {
+                    "title" : "Take It All",
+                    "duration" : 228
+                },
+                {
+                    "title" : "I'll Be Waiting",
+                    "duration" : 241
+                },
+                {
+                    "title" : "One and Only",
+                    "duration" : 348
+                },
+                {
+                    "title" : "Lovesong",
+                    "duration" : 316
+                },
+                {
+                    "title" : "Someone like You",
+                    "duration" : 287
+                }
+            ],
+            "releaseYear" : 2011,
+            "recordLabel" : "XL Recordings / Columbia Records",
+            "coverImg" : "assets/images/21.png"
+        },
+        {
+            "albumId": "AL6",
+            "title": "Loud",
+            "artistId" : 5,
+            "formatId" : 1,
+            "genreId": ["G1","G2","G3"],
+            "inStock": 18,
+            "price" : 14.99,
+            "trackList" : [
+                {
+                    "title" : "S&M",
+                    "duration" : 243
+                },
+                {
+                    "title" : "What's My Name? ft. Drake",
+                    "duration" : 263
+                },
+                {
+                    "title" : "Cheers (Drink to That)",
+                    "duration" : 261
+                },
+                {
+                    "title" : "Fading",
+                    "duration" : 199
+                },
+                {
+                    "title" : "Only Girl (In The World)",
+                    "duration" : 235
+                },
+                {
+                    "title" : "California King Bed",
+                    "duration" : 251
+                },
+                {
+                    "title" : "Man Down",
+                    "duration" : 267
+                },
+                {
+                    "title" : "Raining Men ft. Nicki Minaj",
+                    "duration" : 224
+                },
+                {
+                    "title" : "Complicated",
+                    "duration" : 257
+                },
+                {
+                    "title" : "Skin",
+                    "duration" : 303
+                },
+                {
+                    "title" : "Love the Way You Lie ft. Eminem",
+                    "duration" : 296
+                }
+            ],
+            "releaseYear" : 2010,
+            "recordLabel" : "Def Jam Recordings",
+            "coverImg" : "assets/images/loud.png"
+        },
+        {
+            "albumId": "AL7",
+            "title": "The Fame Monster",
+            "artistId" : 7,
+            "formatId" : 2,
+            "genreId": ["G1","G9"],
+            "inStock": 23,
+            "price" : 39.99,
+            "trackList" : [
+                {
+                    "title" : "Bad Romance",
+                    "duration" : 294
+                },
+                {
+                    "title" : "Alejandro",
+                    "duration" : 274
+                },
+                {
+                    "title" : "Monster",
+                    "duration" : 250
+                },
+                {
+                    "title" : "Speechless",
+                    "duration" : 271
+                },
+                {
+                    "title" : "Dance in the Dark",
+                    "duration" : 289
+                },
+                {
+                    "title" : "Telephone ft. Beyoncé",
+                    "duration" : 221
+                },
+                {
+                    "title" : "So Happy I Could Die",
+                    "duration" : 235
+                },
+                {
+                    "title" : "Teeth",
+                    "duration" : 221
+                }
+            ],
+            "releaseYear" : 2009,
+            "recordLabel" : "Streamline / KonLive / Cherrytree / Interscope",
+            "coverImg" : "assets/images/theFameMonster.png"
+        },
+        {
+            "albumId": "AL8",
+            "title": "Chromatica",
+            "artistId" : 7,
+            "formatId" : 1,
+            "genreId": ["G1","G3"],
+            "inStock": 40,
+            "price" : 24.99,
+            "trackList" : [
+                {
+                    "title" : "Chromatica I",
+                    "duration" : 60
+                },
+                {
+                    "title" : "Alice",
+                    "duration" : 177
+                },
+                {
+                    "title" : "Stupid Love",
+                    "duration" : 193
+                },
+                {
+                    "title" : "Rain on Me ft. Ariana Grande",
+                    "duration" : 182
+                },
+                {
+                    "title" : "Free Woman",
+                    "duration" : 191
+                },
+                {
+                    "title" : "Fun Tonight",
+                    "duration" : 173
+                },
+                {
+                    "title" : "Chromatica II",
+                    "duration" : 41
+                },
+                {
+                    "title" : "911",
+                    "duration" : 172
+                },
+                {
+                    "title" : "Plastic Doll",
+                    "duration" : 221
+                },
+                {
+                    "title" : "Sour Candy ft. Blackpink",
+                    "duration" : 157
+                },
+                {
+                    "title" : "Enigma",
+                    "duration" : 179
+                },
+                {
+                    "title" : "Replay",
+                    "duration" : 186
+                },
+                {
+                    "title" : "Chromatica III",
+                    "duration" : 27
+                },
+                {
+                    "title" : "Sine from Above ft. Elton John",
+                    "duration" : 244
+                },
+                {
+                    "title" : "1000 Doves",
+                    "duration" : 215
+                },
+                {
+                    "title" : "Babylon",
+                    "duration" : 161
+                }
+            ],
+            "releaseYear" : 2020,
+            "recordLabel" : "Streamline / Interscope",
+            "coverImg" : "assets/images/chromatica.png"
+        },
+        {
+            "albumId": "AL9",
+            "title": "Radical Optimism",
+            "artistId" : 8,
+            "formatId" : 2,
+            "genreId": ["G1","G3","G9","G10"],
+            "inStock": 43,
+            "price" : 59.99,
+            "trackList" : [
+                {
+                    "title" : "End of an Era",
+                    "duration" : 196
+                },
+                {
+                    "title" : "Houdini",
+                    "duration" : 186
+                },
+                {
+                    "title" : "Training Season",
+                    "duration" : 209
+                },
+                {
+                    "title" : "These Walls",
+                    "duration" : 218
+                },
+                {
+                    "title" : "Whatcha Doing",
+                    "duration" : 198
+                },
+                {
+                    "title" : "French Exit",
+                    "duration" : 201
+                },
+                {
+                    "title" : "Illusion",
+                    "duration" : 189
+                },
+                {
+                    "title" : "Falling Forever",
+                    "duration" : 223
+                },
+                {
+                    "title" : "Anything for Love",
+                    "duration" : 142
+                },
+                {
+                    "title" : "Maria",
+                    "duration" : 188
+                },
+                {
+                    "title" : "Happy for You",
+                    "duration" : 246
+                }
+            ],
+            "releaseYear" : 2024,
+            "recordLabel" : "Warner Records Inc.",
+            "coverImg" : "assets/images/futureNostalgia.png"
+        },
+        {
+            "albumId": "AL10",
+            "title": "Austin",
+            "artistId" : 6,
+            "formatId" : 1,
+            "genreId": ["G10","G13"],
+            "inStock": 38,
+            "price" : 22.99,
+            "trackList" : [
+                {
+                    "title" : "Don't Understand",
+                    "duration" : 183
+                },
+                {
+                    "title" : "Something Real",
+                    "duration" : 205
+                },
+                {
+                    "title" : "Chemical",
+                    "duration" : 184
+                },
+                {
+                    "title" : "Novacandy",
+                    "duration" : 197
+                },
+                {
+                    "title" : "Mourning",
+                    "duration" : 148
+                },
+                {
+                    "title" : "Too Cool to Die",
+                    "duration" : 205
+                },
+                {
+                    "title" : "Sign Me Up",
+                    "duration" : 199
+                },
+                {
+                    "title" : "Socialite",
+                    "duration" : 200
+                },
+                {
+                    "title" : "Overdrive",
+                    "duration" : 148
+                },
+                {
+                    "title" : "Speedometer",
+                    "duration" : 162
+                },
+                {
+                    "title" : "Hold My Breath",
+                    "duration" : 210
+                },
+                {
+                    "title" : "Enough Is Enough",
+                    "duration" : 165
+                },
+                {
+                    "title" : "Texas Tea",
+                    "duration" : 140
+                },
+                {
+                    "title" : "Buyer Beware",
+                    "duration" : 173
+                },
+                {
+                    "title" : "Landmine",
+                    "duration" : 185
+                },
+                {
+                    "title" : "Green Thumb",
+                    "duration" : 159
+                },
+                {
+                    "title" : "Laugh It Off",
+                    "duration" : 244
+                },
+                {
+                    "title" : "Joy",
+                    "duration" : 287
+                }
+            ],
+            "releaseYear" : 2023,
+            "recordLabel" : "Republic Records / Mercury Records",
+            "coverImg" : "assets/images/austin.png"
+        },
+        {
+            "albumId": "AL11",
+            "title": "SOS",
+            "artistId" : 10,
+            "formatId" : 1,
+            "genreId": ["G1","G2","G5"],
+            "inStock": 27,
+            "price" : 18.99,
+            "trackList" : [
+                {
+                    "title" : "SOS",
+                    "duration" : 117
+                },
+                {
+                    "title" : "Kill Bill",
+                    "duration" : 153
+                },
+                {
+                    "title" : "Seek & Destroy",
+                    "duration" : 203
+                },
+                {
+                    "title" : "Low",
+                    "duration" : 181
+                },
+                {
+                    "title" : "Love Language",
+                    "duration" : 183
+                },
+                {
+                    "title" : "Blind",
+                    "duration" : 150
+                },
+                {
+                    "title" : "User ft. Don Toliver",
+                    "duration" : 146
+                },
+                {
+                    "title" : "Snooze",
+                    "duration" : 201
+                },
+                {
+                    "title" : "Gone Girl",
+                    "duration" : 241
+                }
+            ],
+            "releaseYear" : 2022,
+            "recordLabel" : "Top Dawg / RCA",
+            "coverImg" : "assets/images/sos.png"
+        }
+    ],
+
+    "genres": [
+    {
+      "id": "G1",
+      "name": "Pop"
+    },
+    {
+      "id": "G2",
+      "name": "R&B"
+    },
+    {
+      "id": "G3",
+      "name": "Dance"
+    },
+    {
+      "id": "G4",
+      "name": "Soul"
+    },
+    {
+      "id": "G5",
+      "name": "Hip Hop"
+    },
+    {
+      "id": "G6",
+      "name": "Pop-Rock"
+    },
+    {
+      "id": "G8",
+      "name": "Rap-Rock"
+    },
+    {
+      "id": "G9",
+      "name": "Electronic"
+    },
+    {
+      "id": "G10",
+      "name": "Synth-pop"
+    },
+    {
+      "id": "G11",
+      "name": "Metal"
+    },
+    {
+      "id": "G13",
+      "name": "Rock"
+    },
+    {
+      "id" : "G14",
+      "name" : "Country-pop"
+    }
+    ],
+
+    "artists": [
+    {
+      "id": 1,
+      "name": "Taylor Swift"
+    },
+    {
+      "id": 2,
+      "name": "Beyoncé"
+    },
+    {
+      "id": 3,
+      "name": "Britney Spears"
+    },
+    {
+      "id": 4,
+      "name": "Adele"
+    },
+    {
+      "id": 5,
+      "name": "Rihanna"
+    },
+    {
+      "id": 6,
+      "name": "Post Malone"
+    },
+    {
+      "id": 7,
+      "name": "Lady Gaga"
+    },
+    {
+      "id": 8,
+      "name": "Dua Lipa"
+    },
+    {
+      "id": 9,
+      "name": "Powerwolf"
+    },
+    {
+      "id": 10,
+      "name": "SZA"
+    }
+    ],
+
+    "formats" : [
+        {
+            "id" : 1,
+            "name" : "CD"
+        },
+        {
+            "id" : 2,
+            "name" : "Vinyl"
+        }
+    ]
+}

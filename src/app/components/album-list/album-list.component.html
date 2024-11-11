@@ -1,0 +1,17 @@
+<div fxLayout="column" fxLayoutAlign="center center" style="padding: 20px;">
+    <ng-container *ngIf="albums.length != 0 else elseTemplate">
+            <div fxLayout="row wrap" fxLayoutAlign="end center" id="albums">
+                <div *ngFor="let album of albums">
+                    <app-album [album]="album"></app-album>
+                </div>
+            </div>
+            <div>
+                <button type="button" class="btn btn-info" (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+                <button type="button" class="btn btn-info" (click)="nextPage()"
+                    [disabled]="currentPage === totalPages">Next</button>
+            </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+        <h1 style="color: white; margin-top: 50px">There are no results for the entered criteria.</h1>
+    </ng-template>
+</div>

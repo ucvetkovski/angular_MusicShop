@@ -1,0 +1,22 @@
+
+<div>
+<carousel *ngIf="this.data" [isAnimated]="true" [showIndicators]="false" [noPause]="true" [pauseOnFocus]="true" [interval]="4000" class="carousel">
+    <slide *ngFor="let album of this.data" class="slide" style="background-color: orange;">
+        <div fxLayout="row" fxLayoutAlign="space-between">
+            <div id="showcaseImg" style="background-image: url('{{album.path}}');">
+            </div>
+            <div fxLayout="row" fxLayoutAlign="end">
+                <div style="padding: 20px;">
+                    <h1 class="display-4">{{album.title}}</h1>
+                    <h4 style="opacity: 0.9;">{{album.artist_name}}</h4>
+                    <p><strong>{{album.format_name}} &#8226; ${{album.value}}</strong></p>
+                    <button (click)="viewDetails(album)" type="button" class="btn btn-info">Details</button>
+                </div>
+                <div style="width: 250px; margin-right: 150px; padding: 20px;" class="imageContainer">
+                    <img src="{{album.path}}" class="albumCover" />
+                </div>
+            </div>
+        </div>
+    </slide>
+</carousel>
+</div>

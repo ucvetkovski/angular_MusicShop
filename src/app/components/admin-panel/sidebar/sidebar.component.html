@@ -1,0 +1,16 @@
+<div id="sidebar">
+    <ul>
+        <h6 style="text-decoration: underline;">
+            Users
+        </h6>
+        <li><a [routerLink]="[{ outlets: { admin_panel: ['users'] } }]">All users</a></li>
+        <h6 style="text-decoration: underline;">
+            Albums
+        </h6>
+        <li><a [routerLink]="[{ outlets: { admin_panel: ['albums'] } }]">All albums</a></li>
+        <h6 style="text-decoration: underline;">
+            Orders
+        </h6>
+        <li><a [routerLink]="[{ outlets: { admin_panel: ['orders'] } }]">All orders</a></li>
+    </ul>
+</div>

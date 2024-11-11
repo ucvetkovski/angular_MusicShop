@@ -1,0 +1,40 @@
+<div id="admin_orders">
+    <div class="container">
+        <div>
+            <table border="2px solid black" id="table">
+                <thead>
+                    <tr>
+                        <td>OrderId</td>
+                        <td>UserId</td>
+                        <td>Email</td>
+                        <td>Shipping Address</td>
+                        <td>Card Number</td>
+                        <td>Items</td>
+                        <td>Quantity</td>
+                        <td>Total</td>
+                        <td>CreatedAt</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let order of orders">
+                        <td>{{order.id_order}}</td>
+                        <td>{{order.id_user ? order.id_user : "/"}}</td>
+                        <td>{{order.buyer}}</td>
+                        <td>{{order.shipping_address}}</td>
+                        <td>{{(order.card_number).toString() | cardNumberFormat}}</td>
+                        <td>{{order.title}}</td>
+                        <td>{{order.quantity}}</td>
+                        <td>${{order.value * order.quantity}}</td>
+                        <td>{{order.created_at}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="margin: 10px;">
+            <button type="button" class="btn btn-info" (click)="prevPage()"
+                [disabled]="currentPage === 1">Previous</button>
+            <button type="button" class="btn btn-info" (click)="nextPage()"
+                [disabled]="currentPage === totalPages">Next</button>
+        </div>
+    </div>
+</div>

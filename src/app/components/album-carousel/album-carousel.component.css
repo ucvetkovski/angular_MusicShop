@@ -1,0 +1,25 @@
+.albumCover {
+transform: rotateY(-25deg);
+width: inherit;
+}
+
+.imageContainer {
+perspective: 700px;
+}
+
+.carousel {
+color: white;
+text-align: end;
+/* -webkit-text-stroke: 0.1px black; */
+}
+
+#showcaseImg{
+    width: 55%; 
+    background-position: center; 
+    background-size: cover; opacity: 0.3;
+    mask-image: linear-gradient(to right, white 20%, white 80%, transparent);
+
+}
+.btn {
+    border-radius: 0px !important;
+}

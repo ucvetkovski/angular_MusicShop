@@ -1,0 +1,28 @@
+<div *ngIf="album" id="albumPage" fxLayout="row" fxLayoutAlign="space-between">
+    <div class="albumInfo">
+        <h1 class="strong">{{ album.album.title }}</h1>
+        <h4><span class="strong">Artist:</span> {{album.album.artist_name}}</h4>
+        <div>
+            <h5><span class="strong">Genre:</span></h5>
+            <h5 class="genre" *ngFor="let genre of album.genres">&#8226; {{genre.genre_name}}</h5>
+        </div>
+        <h5><span class="strong">Format:</span> {{album.album.format_name}}</h5>
+        <h5><span class="strong">In stock:</span> {{album.album.in_stock}}</h5>
+        <h5><span class="strong">Price:</span> ${{album.album.value}}</h5>
+        <h5><span class="strong">Release Year:</span> {{album.album.release_year}}</h5>
+        <h5><span class="strong">Label:</span> {{album.album.label_name}}</h5>
+        <ng-container *ngIf="album.album.in_stock > 0; else elseTemplate">
+            <button (click)="addToCart(album.album)" type="button" class="btn btn-info" style="margin-top: 25px;">Add to cart</button>
+        </ng-container>
+        <ng-template #elseTemplate>
+            <span class="btn btn-danger" style="margin-top: 25px;">Out of stock.</span>
+        </ng-template>
+    </div>
+    <div class="albumInfo">
+        <ol>
+            <li *ngFor="let track of album.tracklist">{{track.track_title}} - {{track.duration | duration}}</li>
+        </ol>
+    </div>
+    <div id="albumPageCover" style="background: url('{{album.album.path}}');">
+    </div>
+</div>

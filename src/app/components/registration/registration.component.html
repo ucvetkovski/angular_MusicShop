@@ -1,0 +1,68 @@
+<div style="background-color: skyblue; padding: 30px;">
+    <div class="container" style="background-color: orange; padding: 40px;" fxLayout="column"
+        fxLayoutAlign="space-between center">
+        <form [formGroup]="registration_form" (ngSubmit)="register()">
+            <div class="form-group">
+                <label for="first_name">First name: <span class="error">*</span></label>
+                <input class="form-control" type="text" name="first_name" formControlName="first_name" placeholder="Prisha"/>
+                <div *ngIf="registration_form.get('first_name')?.invalid && registration_form.get('first_name')?.touched">
+                    <div *ngIf="registration_form.get('first_name')?.errors?.['required']"><span class="error">First name is
+                            required.</span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="last_name">Last name:<span class="error">*</span></label>
+                <input class="form-control" type="text" name="last_name" formControlName="last_name" placeholder="Taytas"/>
+                <div *ngIf="registration_form.get('last_name')?.invalid && registration_form.get('last_name')?.touched">
+                    <div *ngIf="registration_form.get('last_name')?.errors?.['required']"><span class="error">Last name is
+                            required.</span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:<span class="error">*</span></label>
+                <input class="form-control" type="text" name="email" formControlName="email" placeholder="placeholder@gmail.com"/>
+                <div *ngIf="registration_form.get('email')?.invalid && registration_form.get('email')?.touched">
+                    <div *ngIf="registration_form.get('email')?.errors?.['required']"><span class="error">Email is required.</span></div>
+                            <div *ngIf="registration_form.get('email')?.errors?.['email']"><span class="error">Invalid email format.</span></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input class="form-control" type="text" name="phone" formControlName="phone" placeholder="011 239 85 47"/>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:<span class="error">*</span></label>
+                <input class="form-control" type="text" name="address" formControlName="address" placeholder="Cornelia Street, New York" />
+                                <div *ngIf="registration_form.get('address')?.invalid && registration_form.get('address')?.touched">
+                                    <div *ngIf="registration_form.get('address')?.errors?.['required']"><span class="error">Address is required.</span></div>
+                                </div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:<span class="error">*</span></label>
+                <input class="form-control" type="password" name="password" formControlName="password" placeholder="*****"/>
+                <div *ngIf="registration_form.get('password')?.invalid && registration_form.get('password')?.touched">
+                    <div *ngIf="registration_form.get('password')?.errors?.['required']"><span class="error">Please enter a password.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="passwordCheck">Repeat password:<span class="error">*</span></label>
+                <input class="form-control" type="password" name="passwordCheck" formControlName="passwordCheck" placeholder="*****"/>
+                <div *ngIf="registration_form.get('passwordCheck')?.invalid && registration_form.get('passwordCheck')?.touched">
+                    <div *ngIf="registration_form.get('passwordCheck')?.errors?.['required']"><span class="error">Please re-enter your
+                            password.</span>
+                    </div>
+                </div>
+                <div *ngIf="registration_form.errors?.['passwordsMismatch'] && registration_form.get('passwordCheck')?.touched">
+                    <span class="error">Passwords do not match.</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <p class="error">{{error}}</p>
+            </div>
+            <div class="form-group">
+                <button type="submit" [disabled]="!registration_form.valid" class="btn btn-info form-control">Register</button>
+            </div>
+        </form>
+    </div>
+</div>

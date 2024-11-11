@@ -1,0 +1,14 @@
+#admin_orders {
+    background-color: orange;
+    padding: 30px;
+}
+
+#table {
+    background-color: skyblue;
+    width: 100%;
+    text-align: center;
+
+    thead td {
+        font-weight: bold;
+    }
+}

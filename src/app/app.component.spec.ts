@@ -1,5 +1,9 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { NgModel } from '@angular/forms';
+import { NgModule } from '@angular/core';
+import { AlbumCarouselComponent } from './components/album-carousel/album-carousel.component';
+import { StoreServiceService } from './services/store-service.service';
 
 describe('AppComponent', () => {
   beforeEach(async () => {

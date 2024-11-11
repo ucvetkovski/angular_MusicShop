@@ -1,0 +1,34 @@
+* {
+    font-family: "Oswald", sans-serif !important;
+    font-weight: 300;
+    font-style: normal;
+    border-radius: 0px !important;
+}
+
+#albumPageCover{
+    width: 550px;
+    background-size: cover !important;
+    mask-image: linear-gradient(to left, white 10%, white 20%, transparent);
+}
+
+.albumInfo{
+    padding: 20px;
+    width: 50%;
+    height: fit-content;
+}
+
+.strong{
+    font-weight: bolder;
+}
+
+li{
+    font-size: large;
+}
+
+.genre{
+    margin-left: 10px;
+}
+
+#albumPage{
+    background-color: skyblue;
+}
